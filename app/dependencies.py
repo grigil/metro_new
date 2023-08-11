@@ -1,7 +1,6 @@
 from fastapi.security import HTTPBearer
 from app.database import SessionLocal
 
-
 http_credentials = HTTPBearer()
 
 

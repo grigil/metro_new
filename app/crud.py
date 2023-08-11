@@ -1,5 +1,3 @@
-import logging
-from uuid import UUID
 from sqlalchemy import and_, or_
 from sqlalchemy.orm import Session
 from app import models, schemas

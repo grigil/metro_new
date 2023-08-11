@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import find
 
-
 app = FastAPI(
     title="metro",
     description="Веб-сервис для test'a",
@@ -15,7 +14,6 @@ app = FastAPI(
     ]
 )
 
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -25,6 +23,3 @@ app.add_middleware(
 )
 
 app.include_router(find.router)
-
-
-

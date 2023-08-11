@@ -1,11 +1,9 @@
-import logging
 from typing import List
 from fastapi import Depends, HTTPException, Request
 from fastapi_utils.inferring_router import InferringRouter
 from sqlalchemy.orm import Session
 from app import crud, schemas
 from app.dependencies import get_db
-
 
 router = InferringRouter()
 
